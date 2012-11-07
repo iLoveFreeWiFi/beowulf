@@ -5,7 +5,6 @@ Authors:
 * liferuiner
 * iLoveFreeWiFi
 
-------------------
 Current Features:
 * Dynamic Grass Generation
 * Walking in all four directions
