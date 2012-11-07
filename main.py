@@ -2,17 +2,19 @@
 
 ''' standard '''
 import pygame, random, sys
-from pygame import *
 from pygame.locals import *
 pygame.init()
+
+''' engine files '''
+import maps
+
+map = maps.spawn('plain')
 
 ''' config '''
 sizeX = 1360
 sizeY = 800
-
 ''' window title '''
 pygame.display.set_caption("Beowulf")
-
 ''' window dimensions '''
 screen = pygame.display.set_mode((sizeX, sizeY), 0, 32)
 
@@ -21,10 +23,10 @@ playerfile = "beo-overworld-front.png"
 
 ''' convert images for pygame '''
 grass = {
-	'grass1': pygame.image.load("grass1.png").convert(),
-	'grass2': pygame.image.load("grass2.png").convert(),
-	'grass3': pygame.image.load("grass3.png").convert(),
-	'grass4': pygame.image.load("grass4.png").convert(),
+	'grass1': pygame.image.load("tiles/grass1.png").convert(),
+	'grass2': pygame.image.load("tiles/grass2.png").convert(),
+	'grass3': pygame.image.load("tiles/grass3.png").convert(),
+	'grass4': pygame.image.load("tiles/grass4.png").convert(),
 }
 player = pygame.image.load(playerfile).convert_alpha()
 fireball = pygame.image.load("fireball.png").convert_alpha()
