@@ -1,2 +1,3 @@
 *.mp3
 *.xcf
+__pycache__
